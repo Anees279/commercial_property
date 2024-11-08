@@ -1,0 +1,384 @@
+#image {
+  height: 80px;
+  width: 80px;
+  /* filter: grayscale(100%) brightness(0); */
+}
+
+/* Navbar styling */
+nav {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  width: 100%; /* Ensure it stretches across the viewport */
+  z-index: 10;
+}
+
+
+/* Make sure navbar items are white */
+.navbar-nav .nav-link {
+  color: white; 
+  font-weight: 700;/* Make anchor links white */
+}
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+/* Add underline to each item */
+.dropdown-item ul li a {
+    text-decoration: underline;
+}
+
+/* Remove background on hover */
+.dropdown-item ul li a:hover {
+    background-color: transparent;
+    color: #fff; /* Keep the text color light */
+}
+
+#home {
+  height: 0vh;
+}
+
+/* Adjust the toggle button position on small screens */
+
+/* Container for the video and content */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* Styling the background video */
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+.navbar-toggler-icon {
+  color: black;
+  font-size: 25px;
+  padding: 5px;
+}
+
+/* Content overlay (text) */
+.content {
+  /* height: 100vh; */
+  position: relative;
+  z-index: 9;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+.video-background {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.slider-heading {
+  font-size: 52px;
+  font-weight: 500;
+  margin-top: 45rem;
+  text-transform: uppercase;
+}
+/* Center the container in the main div */
+
+/* Style for radio_container */
+.radio_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff75;
+  width: fit-content;
+  padding: 10px 7px;
+  margin-bottom: 30px;
+  gap: 5px;
+  height: 40px;
+  border-radius: 9999px;
+  box-shadow: inset 0.5px 0.5px 2px 0 rgb(0 0 0 / 15%);
+  z-index: 999;
+}
+
+/* Hide default radio buttons */
+.radio_container input[type="radio"] {
+  display: none;
+}
+
+/* Style for labels to look like buttons */
+.radio_container .radio_label {
+  padding: 5px 15px;
+  border-radius: 9999px;
+  background-color: #555; /* Lighter color by default */
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect to switch to black */
+.radio_container .radio_label:hover {
+  background-color: #000; /* Turns black on hover */
+}
+
+/* Active state for selected label */
+.radio_container input[type="radio"]:checked + .radio_label {
+  background-color: #000;
+}
+
+/* HOME */
+
+.advSearchForm {
+  padding: 10px;
+  background: #66666696;
+}
+.advSearchForm {
+  border-radius: 15px 15px 15px 15px !important;
+  z-index: 999 !important;
+}
+.search_input,
+.search_input_select {
+  background: transparent !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  color: #fff;
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+.fa-solid {
+  color: #fff;
+}
+.fa-solid:hover {
+  color: gray;
+  cursor: pointer;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+}
+
+.search_input {
+  font-size: 14px !important;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+:host,
+:root {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+.well {
+  color: white;
+}
+.main_bainer {
+  /* min-height: 200vh; */
+  background-color: #000;
+  /* overflow: hidden; */
+}
+.section-title-img {
+  border-radius: 20px;
+}
+/* wellcome-section */
+.wellcome-section {
+  margin-top: 5rem;
+}
+.dash {
+  background-color: #fff;
+  height: 4px;
+  margin: 40px 0px 40px 60px;
+  width: 90%;
+}
+.dash {
+  display: none; /* Hide by default */
+}
+.property-div {
+  box-shadow: 0px 0px 25px 0px #0000004a;
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 30px;
+  width: 30%;
+  margin-left: 31px;
+  padding: 1%;
+  background: #fff;
+}
+.mygrid {
+  padding: 30px;
+  border-radius: 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide img {
+  border-radius: 10px;
+}
+.btn2 {
+  padding: 10px 100px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+}
+/* commercial property specilist */
+.audio_btn_div a {
+  color: black;
+  background-color: white;
+  padding: 6px 30px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 1.3rem;
+}
+.audio_btn_div a:hover {
+  color: black;
+}
+
+/* Additional styles for responsive design */
+.card {
+  background-color: transparent !important;
+}
+
+/* Carousel item styling */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  max-width: 80%;
+}
+.generic--cardTwo__img-wrapper {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
+/* Style to center the play button */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.generic--cardTwo {
+  border-radius: 10px;
+  padding: 20px;
+  height: 50vh;
+  background-color: white;
+  box-shadow: 0px 0px 25px 0px #0000004a;
+  margin-bottom: 30px;
+}
+
+.property_viewmore a {
+  padding: 10px 100px;
+  border-radius: 30px;
+  background-color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+}
+.btn3 {
+  padding: 10px 70px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+}
+.btn4 {
+  padding: 3px 30px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+}
+.news,
+.news .container,
+.news .accordion,
+.news .accordion-item,
+.news .accordion-body,
+.news .accordion-header {
+  background-color: transparent !important;
+}
+
+/* Set text to white for visibility */
+.news h2,
+.news .accordion-button,
+.news .accordion-body,
+.news .accordin-p,
+.news .fw-bold,
+.news .fs-21,
+.news p {
+  color: white !important;
+}
+
+/* Override Bootstrap's accordion button default colors */
+.news .accordion-button {
+  color: white !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.x {
+  color: #000;
+}
+.footer_ul_links {
+  text-decoration: none;
+}
+.footer_ul_links:hover {
+  text-decoration: underline;
+}
+.xx{
+    height: 3px;
+    background-color: white;
+}
+.footer-ul{
+    list-style: none;
+    gap: 30px;
+}
+@media (min-width: 650px) {
+  /* Show only on large devices */
+  .dash {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-heading {
+    font-size: 29px;
+    font-weight: 500;
+    margin-top: 41rem;
+    text-transform: uppercase;
+  }
+}

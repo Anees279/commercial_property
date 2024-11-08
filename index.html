@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Voxdigify</title>
+  </head>
+  <body>
+    <!-- <div class="hero-section"> -->
+    <nav class="container-fluid navbar navbar-expand-lg d-flex custom-navbar ">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <img src="./logo.png" alt="Logo" id="image" class="navbar-logo" />
+
+        <!-- Navbar Toggle Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i class="fa-solid fa-bars"></i
+          ></span>
+        </button>
+
+        <!-- Navbar Menu (Collapsible) -->
+        <div class="navbar-collapse justify-content-center m-lg-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="#"
+                >WAREHOUSE</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="#"
+                >LABOUR ACCOUMADATION</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="#"
+                >FACTORIES</a
+              >
+            </li>
+            <li class="nav-item"></li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                FULL BUILDING
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="#">Commercial-Building</a></li>
+                <li>
+                  <a class="dropdown-item text-light" href="#">Residential-Buliding</a>
+                
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="#"
+                >LIST YOUR PROPERTY</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ABOUT US
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-light" href="#">Our team</a></li>
+                <li><a class="dropdown-item text-light" href="#">Our partner</a></li>
+                <li><a class="dropdown-item text-light" href="#">Blog/News Article</a></li>
+                <li><a class="dropdown-item text-light" href="#">Contact Us</a></li>
+            </ul>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <select name="" id="">
+          <option value="" selected>AED</option>
+          <option value="">USD</option>
+          <option value="">URO</option>
+          <option value="">GBP</option>
+        </select>
+      </div>
+      
+    </nav>
+
+    <div class="video-background">
+      <video autoplay muted loop class="bg-video">
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center"
+        id="home"
+      >
+        <div class="content">
+          <h1 class="slider-heading">BUY COMMERCIAL PROPERTY IN DUBAI</h1>
+          <p class="text-white" style="color: white">
+            <a
+              href="#"
+              class="text-white"
+              style="text-decoration: none; font-size: 1rem"
+              >Buy, Sell, or Rent Property in Dubai With Us</a
+            >
+          </p>
+          <!-- href="https://elitepropertydxb.com/" -->
+          <div
+            class="main-container d-flex justify-content-center align-items-center paddig:30px"
+          >
+            <div class="radio_container">
+              <input
+                type="radio"
+                name="type"
+                value="1"
+                id="sale"
+                checked="checked"
+              />
+              <label class="radio_label" for="sale">SALE</label>
+              <input type="radio" name="type" value="2" id="rent" />
+              <label class="radio_label" for="rent">RENT</label>
+            </div>
+          </div>
+          <div class="container advSearchForm">
+            <div class="row">
+              <div class="col-md-11 col-10" style="padding-left: 22px">
+                <input
+                  type="text"
+                  class="form-control search_input"
+                  name="search"
+                  value=""
+                  placeholder="Search"
+                />
+              </div>
+              <div class="col-md-1 col-2">
+                <button
+                  class="btn searchbtn pb-1"
+                  name="searchkey"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="row searchForm bg-body-transparent text-white pt-1 w-100 text-left"
+            >
+              <div class="col-12 col-lg-2">
+                <div class="mb-3 mt-3">
+                  <!--<input type="text" class="form-control search_input" name="min_price" value=""-->
+                  <!--    placeholder="Min Price">-->
+                  <select
+                    class="form-control search_input"
+                    name="min_price"
+                    id="min_price"
+                    autocomplete="off"
+                    placeholder="Min Price"
+                  >
+                    <option value="" selected="">Min Price</option>
+                    <option value="300000">AED 300,000</option>
+                    <option value="400000">AED 400,000</option>
+                    <option value="500000">AED 500,000</option>
+                    <option value="600000">AED 600,000</option>
+                    <option value="700000">AED 700,000</option>
+                    <option value="800000">AED 800,000</option>
+                    <option value="900000">AED 900,000</option>
+                    <option value="1000000">AED 1,000,000</option>
+                    <option value="2000000">AED 2,000,000</option>
+                    <option value="3000000">AED 3,000,000</option>
+                    <option value="4000000">AED 4,000,000</option>
+                    <option value="5000000">AED 5,000,000</option>
+                    <option value="6000000">AED 6,000,000</option>
+                    <option value="7000000">AED 7,000,000</option>
+                    <option value="8000000">AED 8,000,000</option>
+                    <option value="9000000">AED 9,000,000</option>
+                    <option value="10000000">AED 10,000,000</option>
+                    <option value="20000000">AED 20,000,000</option>
+                    <option value="30000000">AED 30,000,000</option>
+                    <option value="40000000">AED 40,000,000</option>
+                    <option value="50000000">AED 50,000,000</option>
+                    <option value="60000000">AED 60,000,000</option>
+                    <option value="70000000">AED 70,000,000</option>
+                    <option value="80000000">AED 80,000,000</option>
+                    <option value="90000000">AED 90,000,000</option>
+                    <option value="100000000">AED 100,000,000</option>
+                    <option value="200000000">AED 200,000,000</option>
+                    <option value="300000000">AED 300,000,000</option>
+                    <option value="400000000">AED 400,000,000</option>
+                    <option value="500000000">AED 500,000,000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                <div class="mb-3 mt-3">
+                  <!--<input type="text" class="form-control search_input" name="max_price" value=""-->
+                  <!--    placeholder="Max Price">-->
+                  <select
+                    class="form-control search_input"
+                    name="max_price"
+                    id="max_price"
+                    autocomplete="off"
+                    placeholder="Max Price"
+                  >
+                    <option value="" selected="">Max Price</option>
+                    <option value="300000">AED 300,000</option>
+                    <option value="400000">AED 400,000</option>
+                    <option value="500000">AED 500,000</option>
+                    <option value="600000">AED 600,000</option>
+                    <option value="700000">AED 700,000</option>
+                    <option value="800000">AED 800,000</option>
+                    <option value="900000">AED 900,000</option>
+                    <option value="1000000">AED 1,000,000</option>
+                    <option value="2000000">AED 2,000,000</option>
+                    <option value="3000000">AED 3,000,000</option>
+                    <option value="4000000">AED 4,000,000</option>
+                    <option value="5000000">AED 5,000,000</option>
+                    <option value="6000000">AED 6,000,000</option>
+                    <option value="7000000">AED 7,000,000</option>
+                    <option value="8000000">AED 8,000,000</option>
+                    <option value="9000000">AED 9,000,000</option>
+                    <option value="10000000">AED 10,000,000</option>
+                    <option value="20000000">AED 20,000,000</option>
+                    <option value="30000000">AED 30,000,000</option>
+                    <option value="40000000">AED 40,000,000</option>
+                    <option value="50000000">AED 50,000,000</option>
+                    <option value="60000000">AED 60,000,000</option>
+                    <option value="70000000">AED 70,000,000</option>
+                    <option value="80000000">AED 80,000,000</option>
+                    <option value="90000000">AED 90,000,000</option>
+                    <option value="100000000">AED 100,000,000</option>
+                    <option value="200000000">AED 200,000,000</option>
+                    <option value="300000000">AED 300,000,000</option>
+                    <option value="400000000">AED 400,000,000</option>
+                    <option value="500000000">AED 500,000,000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-2">
+                <div class="mb-3 mt-3">
+                  <!--<input type="text" class="form-control search_input" name="area"-->
+                  <!--    value="" placeholder="Area">-->
+                  <select
+                    class="form-control search_input"
+                    name="area"
+                    id="area"
+                    autocomplete="off"
+                    placeholder="Area"
+                  >
+                    <option value="" selected="">Area</option>
+                    <option value="1000">1,000</option>
+                    <option value="3000">3,000</option>
+                    <option value="5000">5,000</option>
+                    <option value="10000">10,000</option>
+                    <option value="30000">30,000</option>
+                    <option value="50000">50,000</option>
+                    <option value="80000">80,000</option>
+                    <option value="100000">100,000</option>
+                    <option value="200000">200,000</option>
+                    <option value="300000">300,000</option>
+                    <option value="400000">400,000</option>
+                    <option value="500000">500,000</option>
+                    <option value="600000">600,000</option>
+                    <option value="700000">700,000</option>
+                    <option value="800000">800,000</option>
+                    <option value="900000">900,000</option>
+                    <option value="1000000">1,000,000</option>
+                    <option value="2000000">2,000,000</option>
+                    <option value="3000000">3,000,000</option>
+                    <option value="4000000">4,000,000</option>
+                    <option value="5000000">5,000,000</option>
+                    <option value="6000000">6,000,000</option>
+                    <option value="7000000">7,000,000</option>
+                    <option value="8000000">8,000,000</option>
+                    <option value="9000000">9,000,000</option>
+                    <option value="10000000">10,000,000</option>
+                    <option value="20000000">20,000,000</option>
+                    <option value="30000000">30,000,000</option>
+                    <option value="40000000">40,000,000</option>
+                    <option value="50000000">50,000,000</option>
+                    <option value="60000000">60,000,000</option>
+                    <option value="70000000">70,000,000</option>
+                    <option value="80000000">80,000,000</option>
+                    <option value="90000000">90,000,000</option>
+                    <option value="100000000">100,000,000</option>
+                    <option value="200000000">200,000,000</option>
+                    <option value="300000000">300,000,000</option>
+                    <option value="400000000">400,000,000</option>
+                    <option value="500000000">500,000,000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3">
+                <div class="mb-3 mt-3">
+                  <!--<input type="text" class="form-control search_input" name="area"-->
+                  <!--    value="" placeholder="Area">-->
+                  <select
+                    class="form-control search_input"
+                    name="propertyType"
+                    id="propertyType"
+                    autocomplete="off"
+                    placeholder="Property Type"
+                  >
+                    <option value="" selected="">Property Type</option>
+
+                    <option value="1">Warehouses</option>
+                    <option value="2">Labor Accommodation</option>
+                    <option value="3">Factories</option>
+                    <option value="4">Commercial Buildings</option>
+                    <option value="5">Residential Buildings</option>
+                    <option value="6">Land Sales</option>
+                    <option value="7">Offices</option>
+                    <option value="8">Full Floors</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3">
+                <div class="mb-3 mt-3">
+                  <!--<input type="text" class="form-control search_input" name="location"-->
+                  <!--    value="" placeholder="Location">-->
+
+                  <select
+                    class="form-control search_input"
+                    name="community"
+                    id="community"
+                    autocomplete="off"
+                    placeholder="Location"
+                  >
+                    <option value="" selected="">location</option>
+                    <option value="Al Furjan">Al Furjan</option>
+                    <option value="Al Hayl">Al Hayl</option>
+                    <option value="Al Jada">Al Jada</option>
+                    <option value="Al Jaddaf">Al Jaddaf</option>
+                    <option value="Al Marjan Island">Al Marjan Island</option>
+                    <option value="Al Quoz">Al Quoz</option>
+                    <option value="Arabian Ranches 3">Arabian Ranches 3</option>
+                    <option value="Arjan">Arjan</option>
+                    <option value="Business Bay">Business Bay</option>
+                    <option value="Damac Hills 2">Damac Hills 2</option>
+                    <option value="Damac Lagoons">Damac Lagoons</option>
+                    <option value="Deira">Deira</option>
+                    <option value="Downtown Dubai">Downtown Dubai</option>
+                    <option value="Dubai Creek Harbour">
+                      Dubai Creek Harbour
+                    </option>
+                    <option value="Dubai Harbour">Dubai Harbour</option>
+                    <option value="Dubai Hills Estate">
+                      Dubai Hills Estate
+                    </option>
+                    <option value="Dubai Industrial City">
+                      Dubai Industrial City
+                    </option>
+                    <option value="Dubai Investment Park">
+                      Dubai Investment Park
+                    </option>
+                    <option value="Dubai Marina">Dubai Marina</option>
+                    <option value="Dubai South City">Dubai South City</option>
+                    <option value="Dubailand">Dubailand</option>
+                    <option value="EMAAR Beachfront">EMAAR Beachfront</option>
+                    <option value="Expo City">Expo City</option>
+                    <option value="Greens">Greens</option>
+                    <option value="Hamriyah Free Zone">
+                      Hamriyah Free Zone
+                    </option>
+                    <option value="JBR">JBR</option>
+                    <option value="Jebel Ali">Jebel Ali</option>
+                    <option value="Jumeirah">Jumeirah</option>
+                    <option value="Jumeirah Lake Towers">
+                      Jumeirah Lake Towers
+                    </option>
+                    <option value="Jumeirah Village Circle">
+                      Jumeirah Village Circle
+                    </option>
+                    <option value="Jumeirah Village Triangle">
+                      Jumeirah Village Triangle
+                    </option>
+                    <option value="Majan">Majan</option>
+                    <option value="Meydan">Meydan</option>
+                    <option value="Mohammad Bin Rashid City">
+                      Mohammad Bin Rashid City
+                    </option>
+                    <option value="Motor City">Motor City</option>
+                    <option value="Nad Al Sheba">Nad Al Sheba</option>
+                    <option value="Palm Jebel Ali">Palm Jebel Ali</option>
+                    <option value="Palm Jumeirah">Palm Jumeirah</option>
+                    <option value="Satwa">Satwa</option>
+                    <option value="Sharjah Industrial Area">
+                      Sharjah Industrial Area
+                    </option>
+                    <option value="Sports City">Sports City</option>
+                    <option value="Springs">Springs</option>
+                    <option value="The Oasis By Emaar">
+                      The Oasis By Emaar
+                    </option>
+                    <option value="Umm Al Quwain Marina">
+                      Umm Al Quwain Marina
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- wellcome section -->
+    <section class="main_bainer">
+      <div
+        class="container-fluid well d-flex flex-column flex-lg-row align-items-center pt-5"
+      >
+        <div
+          class="container-fluid wellcome-section col-12 col-lg-6 text-center p-2 p-lg-5"
+        >
+          <h2
+            class="text-white section-title-heading display-5 text-uppercase"
+            style="text-decoration-line: underline"
+          >
+            Welcome to Commercial Property In Dubai
+          </h2>
+
+          <p class="text-white section-p text-left">
+            Looking for the perfect commercial property in Dubai?
+            <strong
+              ><a
+                class="text-light"
+                href="https://www.commercialpropertydxb.ae/"
+                >Commercial Property DXB</a
+              ></strong
+            >
+            is your trusted source for finding exceptional properties in the
+            heart of this dynamic city. As a leading property expert in Dubai,
+            we connect you with the finest real estate agents and brokers,
+            ensuring a seamless experience throughout your property journey. Our
+            goal is to assist you in finding your dream
+            <strong>
+              <a class="text-light" href="#commercial-property">
+                property in Dubai</a
+              ></strong
+            >. Whether you are a business owner, investor, or tenant, our
+            comprehensive listings and personalized service ensure that your
+            property requirements are met with utmost professionalism and
+            efficiency.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6 md-6 text-center">
+          <img
+            src="https://www.commercialpropertydxb.ae/frontend/assets/images/award.webp"
+            alt=""
+            class="img-fluid section-title-img"
+            width="75%"
+          />
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="dash"></div>
+      </div>
+      <div class="container p-lg-5">
+        <div class="">
+          <div class="text-center" id="commercial-property">
+            <h2 class="text-white section-title-heading display-5 p-sm-2">
+              COMMERCIAL FEATURED PROPERTIES
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <!-- For large devices: 3 columns each. For small devices: full width (stacked) -->
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="mygrid p-2 bg-white text-dark text-center">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark (1).jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="land_commercial text-start">
+                    <p class="land_commercial-p">Sale | Land Commercial</p>
+                    <h3>AED 23,000,000</h3>
+                    <span>Mix Use Residen...</span>
+                  </div>
+                  <img src="./Ashley.jpg" alt="" height="90px" />
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./area.png" alt="" height="20px" />
+                    <span class="ms-2">47450.00 sqft.</span>
+                  </div>
+
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./plot.png" alt="" height="20px" />
+                    <span class="ms-2">12430 sqft.</span>
+                  </div>
+                </div>
+
+                <div class="commercial_button d-flex justify-content-around p-2">
+                  <button type="button" class="btn btn-secondary pl-3 pr-3">
+                    <i class="fa-solid fa-phone"></i>Call
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa-regular fa-envelope"></i>
+                    Email
+                  </button>
+                  <button type="button" class="btn btn-success me-0">
+                    <i class="fa-brands fa-whatsapp"></i>Whatsapp
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd dive -->
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="mygrid p-2 bg-white text-dark text-center">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark (1).jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="land_commercial text-start">
+                    <p class="land_commercial-p">Sale | Land Commercial</p>
+                    <h3>AED 23,000,000</h3>
+                    <span>Mix Use Residen...</span>
+                  </div>
+                  <img src="./Ashley.jpg" alt="" height="90px" />
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./area.png" alt="" height="20px" />
+                    <span class="ms-2">47450.00 sqft.</span>
+                  </div>
+
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./plot.png" alt="" height="20px" />
+                    <span class="ms-2">12430 sqft.</span>
+                  </div>
+                </div>
+
+                <div class="commercial_button d-flex justify-content-around p-2">
+                  <button type="button" class="btn btn-secondary pl-3 pr-3">
+                    <i class="fa-solid fa-phone"></i>Call
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa-regular fa-envelope"></i>
+                    Email
+                  </button>
+                  <button type="button" class="btn btn-success me-0">
+                    <i class="fa-brands fa-whatsapp"></i>Whatsapp
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd -->
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="mygrid p-2 bg-white text-dark text-center">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark (1).jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="land_commercial text-start">
+                    <p class="land_commercial-p">Sale | Land Commercial</p>
+                    <h3>AED 23,000,000</h3>
+                    <span>Mix Use Residen...</span>
+                  </div>
+                  <img src="./Ashley.jpg" alt="" height="90px" />
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./area.png" alt="" height="20px" />
+                    <span class="ms-2">47450.00 sqft.</span>
+                  </div>
+
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./plot.png" alt="" height="20px" />
+                    <span class="ms-2">12430 sqft.</span>
+                  </div>
+                </div>
+
+                <div class="commercial_button d-flex justify-content-around p-2">
+                  <button type="button" class="btn btn-secondary pl-3 pr-3">
+                    <i class="fa-solid fa-phone"></i>Call
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa-regular fa-envelope"></i>
+                    Email
+                  </button>
+                  <button type="button" class="btn btn-success me-0">
+                    <i class="fa-brands fa-whatsapp"></i>Whatsapp
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 4th -->
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="mygrid p-2 bg-white text-dark text-center">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark (1).jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="land_commercial text-start">
+                    <p class="land_commercial-p">Sale | Land Commercial</p>
+                    <h3>AED 23,000,000</h3>
+                    <span>Mix Use Residen...</span>
+                  </div>
+                  <img src="./Ashley.jpg" alt="" height="90px" />
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./area.png" alt="" height="20px" />
+                    <span class="ms-2">47450.00 sqft.</span>
+                  </div>
+
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./plot.png" alt="" height="20px" />
+                    <span class="ms-2">12430 sqft.</span>
+                  </div>
+                </div>
+
+                <div class="commercial_button d-flex justify-content-around p-2">
+                  <button type="button" class="btn btn-secondary pl-3 pr-3">
+                    <i class="fa-solid fa-phone"></i>Call
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa-regular fa-envelope"></i>
+                    Email
+                  </button>
+                  <button type="button" class="btn btn-success me-0">
+                    <i class="fa-brands fa-whatsapp"></i>Whatsapp
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 5th -->
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="mygrid p-2 bg-white text-dark text-center">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark (1).jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="land_commercial text-start">
+                    <p class="land_commercial-p">Sale | Land Commercial</p>
+                    <h3>AED 23,000,000</h3>
+                    <span>Mix Use Residen...</span>
+                  </div>
+                  <img src="./Ashley.jpg" alt="" height="90px" />
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./area.png" alt="" height="20px" />
+                    <span class="ms-2">47450.00 sqft.</span>
+                  </div>
+
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./plot.png" alt="" height="20px" />
+                    <span class="ms-2">12430 sqft.</span>
+                  </div>
+                </div>
+
+                <div class="commercial_button d-flex justify-content-around p-2">
+                  <button type="button" class="btn btn-secondary pl-3 pr-3">
+                    <i class="fa-solid fa-phone"></i>Call
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa-regular fa-envelope"></i>
+                    Email
+                  </button>
+                  <button type="button" class="btn btn-success me-0">
+                    <i class="fa-brands fa-whatsapp"></i>Whatsapp
+                  </button>
+                </div>
+              </div>
+            </div><div class="col-lg-4 col-12 mb-3">
+              <div class="mygrid p-2 bg-white text-dark text-center">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark (1).jfif" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./watermark.jfif" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="land_commercial text-start">
+                    <p class="land_commercial-p">Sale | Land Commercial</p>
+                    <h3>AED 23,000,000</h3>
+                    <span>Mix Use Residen...</span>
+                  </div>
+                  <img src="./Ashley.jpg" alt="" height="90px" />
+                </div>
+                <div class="d-flex justify-content-between p-2">
+                  <div class="d-flex align-items-center">
+                    <img src="./area.png" alt="" height="20px" />
+                    <span class="ms-2">47450.00 sqft.</span>
+                  </div>
+
+                  <div class="d-flex align-items-center p-2">
+                    <img src="./plot.png" alt="" height="20px" />
+                    <span class="ms-2">12430 sqft.</span>
+                  </div>
+                </div>
+
+                <div class="commercial_button d-flex justify-content-around p-2">
+                  <button type="button" class="btn btn-secondary pl-3 pr-3">
+                    <i class="fa-solid fa-phone"></i>Call
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa-regular fa-envelope"></i>
+                    Email
+                  </button>
+                  <button type="button" class="btn btn-success me-0">
+                    <i class="fa-brands fa-whatsapp"></i>Whatsapp
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- 6th -->
+            
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      <div class="d-flex justify-content-center align-items-center p-3">
+        <button type="button" class="btn2" style="background-color: white; color: black;">
+          View More
+        </button>
+      
+    </section>
+    <!-- <section class="about"></section> -->
+    <!-- <section class="about">
+      <div class="container">
+        <div class="main_about_heading">
+          <h1>ABOUT US</h1>
+        </div>
+      </div>
+    </section> -->
+    <section  class="py-5 about  bg-secondary">
+      <div class="container  ">
+          <div class="row ">
+              <div class="col-md-5 col-lg-5 col-12 text-dark bg-grey">
+                  <h2 class="display-5 section-title-heading mb-4">ABOUT US</h2>
+                 
+                  <br>
+                  <p class=" mb-4 section-p">At Commercial Property DXB, we are an Award-Winning Real Estate Brokerage Firm Based In
+                      Dubai. With a team of experienced professionals, our primary goal is to provide expert guidance to
+                      our clients interested in
+  
+                     
+                       <strong class="">  buying property in Dubai</strong>
+                       . Our commitment to customer-centricity sets us
+                      apart from other brokers as we prioritize superior advisory services over the hard sell. We work
+                      tirelessly for our clients, ensuring that our business is structured to deliver expert solutions
+                      tailored to their unique needs. Trust Elite Commercial Property for exceptional real estate
+                      expertise and personalized service.
+  
+                  </p>
+  
+                  <a href="https://commercialpropertydxb.com/" class="" style="color:#ffffff;">www.commercialpropertydxb.ae </a>
+              </div>
+              <div class="col-md-7 col-lg-7 col-12 text-center aboutus-video">
+                  <video width="100%" height="100%" controls="">
+    <source src="https://www.commercialpropertydxb.ae/frontend/assets/images/Commercial.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+                 
+              </div>
+          </div>
+      </div>
+  
+  </section>
+  <!-- commercial property specilist -->
+  <section class="bg-dark">
+    <div class="container">
+        <div class="row p-lg-5 commercial-div">
+            <div class="col-md-12 col-lg-12 col-12 text-center">
+                <h2 class="display-5 text-white section-title-heading ">COMMERCIAL PROPERTY SPECIALISTS</h2>
+            </div>
+            <div class="col-md-4 col-lg-4 col-12 align-self-center">
+                
+                <p class="text-white section-p">With years of experience and industry expertise, our team of real estate
+                    professionals is dedicated to providing unparalleled service. We understand the Dubai property
+                    market inside out, and our knowledgeable experts are ready to guide you every step of the way. From
+                    initial consultation to property viewings and negotiations, we ensure a smooth and hassle-free
+                    experience for our clients.
+                </p>
+               
+                
+            </div>
+          
+            <div class="col-md-8 col-lg-8 col-12 text-center align-self-center">
+                <div class="container text-center my-3">
+                    <div class="row mx-auto my-auto justify-content-center">
+                        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item">
+                                    <div class="col-md-12">
+                                        <div class="card" style="background-color:transparent !important;">
+                                            <div class="card1">
+                                                <div class="col-md-6 col-lg-6 col-12 text-center align-self-center">
+                                                    <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/bee.jpeg" alt="Bee" width="80%">
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-12 align-self-center ">
+                                                    
+                                                    <div class="audio_text_div text-light">
+                                                        <h3>BEE MEARINI</h3>
+                                                        <p>Head of Commercial<br>
+                                                            +971 56 723 9970<br><br>
+                                                            Bee Mearini has been working as a real estate professional
+                                                            for
+                                                            the past 18 years, of which the
+                                                            last 12 years have been in Dubai. Bee specializes...
+                                                            <a href="https://www.commercialpropertydxb.ae/agents/bee-mearini" class="agent-readmore" style="color:#fff; font-style:italic;">Read more</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="audio_btn_div">
+                                                        <a href="https://www.commercialpropertydxb.ae/our-team" class="">OUR TEAM</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-12">
+                                        <div class="card" style="background-color:transparent !important;">
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-6 col-12 text-center align-self-center">
+                                                    <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/aaron.jpg" alt="aaron" width="80%">
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-12 align-self-center ">
+
+                                                    <div class="audio_text_div text-light">
+                                                        <h3>Aaron Leo</h3>
+                                                        <p> CEO &amp; Founder<br>
+                                                            +971 56 754 8787<br><br>
+                                                            Aaron Leo has over a decade of experience in the real estate
+                                                            advisory industry. He co-founded Elite Property Property
+                                                            and...
+                                                            <a href="https://www.commercialpropertydxb.ae/agents/aaron-leo" class="agent-readmore" style="color:#fff; font-style:italic;">Read more</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="audio_btn_div">
+                                                        <a href="https://www.commercialpropertydxb.ae/our-team" class="">OUR TEAM</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="col-md-12">
+                                        <div class="card" style="background-color:transparent !important;">
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-6 col-12 text-center align-self-center">
+                                                    <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/jake.jpg" alt="aaron" width="80%">
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-12 align-self-center ">
+                                                   
+                                                    <div class="audio_text_div text-light">
+                                                        <h3>Jake Jones</h3>
+                                                        <p> CEO &amp; Founder<br>
+                                                            +971 56 505 5043<br><br>
+                                                            Jake Jones is an award-winning real estate adviser with a
+                                                            demonstrated track record in the UAE and the UK. Over the...
+                                                            <a href="https://www.commercialpropertydxb.ae/agents/jake-jones" class="agent-readmore" style="color:#fff; font-style:italic;">Read more</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="audio_btn_div">
+                                                        <a href="https://www.commercialpropertydxb.ae/our-team" class="">OUR TEAM</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <div class="col-md-12">
+                                        <div class="card" style="background-color:transparent !important;">
+                                            <div class="row">
+                                                <div class="col-md-6 col-lg-6 col-12 text-center align-self-center">
+                                                    <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/Ashley_Scott.jpg" alt="aaron" width="80%">
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-12 align-self-center ">
+                                                   
+                                                    <div class="audio_text_div text-light">
+                                                        <h3>Ashley Scott</h3>
+                                                        <p>Sr. Commercial Advisor<br>
+                                                            +971 58 540 9684<br><br>
+                                                           
+                                                        </p>
+                                                    </div>
+                                                    <div class="audio_btn_div">
+                                                        <a href="https://www.commercialpropertydxb.ae/our-team" class="">OUR TEAM</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <div class="col-md-12">
+                                        <div class="card" style="background-color:transparent !important;">
+                                            <div class="card1">
+                                                <div class="col-md-6 col-lg-6 col-12 text-center align-self-center">
+                                                    <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/Hamzah.jpg" alt="aaron" width="80%">
+                                                </div>
+                                                <div class="col-md-6 col-lg-6 col-12 align-self-center ">
+                                                    
+                                                    <div class="audio_text_div text-light">
+                                                        <h3>Hamzah Dedat</h3>
+                                                        <p>Commercial Advisor<br>
+                                                            +971 58 539 0516<br><br>
+                                                        </p>
+                                                    </div>
+                                                    <div class="audio_btn_div">
+                                                        <a href="https://www.commercialpropertydxb.ae/our-team" class="">OUR TEAM</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="dash mb-sm-4"></div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <!-- <hr  class="hr" style="
+            color: aliceblue;
+            width: 500px;
+            margin-left: 30%;
+        "> -->
+        </div>
+    
+    </div>
+ 
+
+<!-- youtube video -->
+ <section class="container you_tube vedio bg-dark">
+  
+  <div class="row commercial-div">
+    <div class="col-md-12 col-lg-12 col-12  text-center">
+        <h2 class="display-5 text-white section-title-heading mb-4">YOUTUBE VIDEOS</h2>
+    </div>
+
+    
+        <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo  ">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/3vu0-JhSGDY" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/3vu0-JhSGDY/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/3vu0-JhSGDY/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/3vu0-JhSGDY/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper ">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate text-dark" data-animation="animate__fadeIn" data-duration="400">Villa for sale in Sidra Villas I</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/9JjlwceqFQw" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/9JjlwceqFQw/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/9JjlwceqFQw/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/9JjlwceqFQw/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">Apartment for sale in Royal Oceanic Marina..</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/zqvwcBCAivo" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/zqvwcBCAivo/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/zqvwcBCAivo/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/zqvwcBCAivo/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">Exclusive Launch: Samana IBIZA – A New Level of Luxury..</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/u-Lzp0IpB48" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/u-Lzp0IpB48/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/u-Lzp0IpB48/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/u-Lzp0IpB48/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">Ellington Properties | Playa Del Sol</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/tyfb3l8dXb0" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/tyfb3l8dXb0/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/tyfb3l8dXb0/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/tyfb3l8dXb0/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">Introducing Greenridge By Emaar..</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/jNyb8hITgeE" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/jNyb8hITgeE/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/jNyb8hITgeE/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/jNyb8hITgeE/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">DAMAC’s New Master Community: SUN CITY</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/9hCr9sz8Q_s" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/9hCr9sz8Q_s/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/9hCr9sz8Q_s/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/9hCr9sz8Q_s/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">Introducing Golf Hillside By Emaar</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/SMKmvBx1Mqk" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/SMKmvBx1Mqk/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/SMKmvBx1Mqk/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/SMKmvBx1Mqk/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">The Oasis offers Dubai’s most luxurious living experience in an exclusive...</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/TMam1VCpe3s" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/TMam1VCpe3s/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/TMam1VCpe3s/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/TMam1VCpe3s/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">Contact our experts today!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/nJgk9KFzLWk" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/nJgk9KFzLWk/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/nJgk9KFzLWk/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/nJgk9KFzLWk/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">APARTMENT FOR SALE IN SADAF 6, SADAF</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/MbzNOsYc79E" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/MbzNOsYc79E/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/MbzNOsYc79E/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/MbzNOsYc79E/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">🏆 Elite Property Proud to have achieved a prestigious Alliance by Emaar!🏆</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="col-md-3 col-lg-3 col-12 pt-5 align-self-center">
+        <div class="generic--cardTwo">
+            <div class="generic--cardTwo__img-wrapper img-wrapper animate" data-animation="animate__fadeIn" data-duration="200">
+                <a href="https://youtu.be/TIrGAQuay28" data-fancybox="video-gallery1" class="image-gallery-anchor">
+                    <img src="https://i.ytimg.com/vi/TIrGAQuay28/hqdefault.jpg" alt="image-gallery" data-lazy-src="https://i.ytimg.com/vi/TIrGAQuay28/hqdefault.jpg" data-ll-status="loaded" class="entered lazyloaded" width="100%">
+                    <noscript><img src="https://i.ytimg.com/vi/TIrGAQuay28/hqdefault.jpg"
+                            alt="image-gallery"></noscript>
+                    <div class="play-btn"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/play-btn.svg" alt="play-btn">
+                    </div>
+                </a>
+            </div>
+            <div class="generic--cardTwo__descripWrapper">
+                <div class="generic--head no-border">
+                    <!--<h6 class="generic--head__head sub-head animate" data-animation="animate__fadeIn" data-duration="300">August 30, 2022                        </h6>-->
+                    <h4 class="generic--head__head animate" data-animation="animate__fadeIn" data-duration="400">Damac X Babolex | Al Marjan Island | Ras Al Khaimah</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                
+    <div class="d-flex justify-content-center align-items-center p-3">
+      <a href="https://m.youtube.com/@elitepropertydxb" target="_blank">
+        <button type="button" class="btn3" style="background-color: white; color: black;">
+          View More Videos
+        </button>
+      </a>
+    </div>
+    
+
+</div>
+ </section>
+ <section class="commercial market place">
+  <div class="container commercial_market text-light d-flex justify-content-center">
+    <div class="market_content text-center">
+      <h1>THE PRIME COMMERCIAL MARKETPLACE</h1>
+      <p>Dubai offers a wealth of opportunities, and we help you navigate through the best places to buy properties in the city. Here are some sought-after locations where you can find remarkable commercial properties:</p>
+      <div class="container my-4">
+        
+        <!-- First Row with Two Columns and 10px Gap -->
+        <div class="row justify-content-center mt-2" style="gap: 10px;">
+          <div class="col-12 col-md-5 bg-dark text-white p-3 text-start " style="border: 3px solid white;">
+            <h2>Dubai Investments Park</h2>
+            <p>Known for its business-friendly environment and state-of-the-art infrastructure, Dubai Investments Park offers a range of commercial properties suitable for various industries.</p>
+            <button class="btn4">View property</button>
+          </div>
+          <div class="col-12 col-md-5 bg-dark text-white p-3 text-start" style="border: 3px solid white;">
+            <h2>Jabel Ali</h2>
+            <p>Located strategically near the Jebel Ali Port and Free Zone, this thriving commercial hub is ideal for businesses looking for international trade and logistics opportunities.</p>
+            <button class="btn4">View property</button>
+          </div>
+            
+          </div>
+        </div>
+
+        <!-- Second Row with Two Columns and 10px Gap -->
+        <div class="row justify-content-center mt-2" style="gap: 10px;">
+          <div class="col-12 col-md-5 bg-dark text-white p-3 text-start" style="border: 3px solid white;">
+            <h2>Palm Jumeirah</h2>
+            <p>As a world-famous destination, Palm Jumeirah presents an excellent opportunity for businesses in the hospitality and tourism sectors.</p>
+            <button class="btn4">View property</button>
+            
+          </div>
+          <div class="col-12 col-md-5 bg-dark text-white p-3 text-start" style="border: 3px solid white;">
+            <h1>Business Bay</h1>
+            <p>This central business district boasts a mix of commercial towers and properties, providing a prestigious address for corporations and entrepreneurs alike.</p>
+            <button class="btn4">View property</button>
+
+          </div>
+        </div>
+
+        <!-- Third Row with Two Columns and 10px Gap -->
+        <div class="row justify-content-center mt-2" style="gap: 10px;">
+          <div class="col-12 col-md-5 bg-dark text-white p-3 text-start" style="border: 3px solid white;">
+            <h2>Internet/Media City</h2>
+            <p>If you are in the technology or media industry, this vibrant and innovative hub offers cutting-edge facilities and a supportive ecosystem.</p>
+            <button class="btn4">View property</button>
+
+          </div>
+          <div class="col-12 col-md-5 bg-dark text-white p-3 text-start" style="border: 3px solid white;">
+            <h2>Sheikh Zayed Road</h2>
+            <p>With its iconic skyline and easy access to key business and leisure destinations, Sheikh Zayed Road is a prime location for commercial properties.</p>
+            <button class="btn4">View property</button>
+
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section class="WE PARTNER WITH THE BEST bg-secondary">
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center text-white">
+            <h2 class="display-5 section-title-heading  mb-4">WE PARTNER WITH THE BEST</h2>
+            <p class="  mb-4">We are a preferred partner with all leading developers in the UAE and the
+                UK. We also enjoy <br>
+                excellent working relationships with all the leading financial institutions.</p>
+                <h1 style="font-size: 4rem;">OUR OFFICE</h1>
+        </div>
+        
+      
+        
+    </div>
+    <div class="col-sm-12 ">
+      <iframe width="100%" height="480" src="https://my.matterport.com/show/?m=bEfvSmad23q" frameborder="0" allowfullscreen="" allow="xr-spatial-tracking"></iframe>
+  </div>
+</div>
+</section>
+<section class="Invest in Your Future bg-dark">
+  <section class="bg-dark">
+    <div class="container">
+    <div class="container-fluid">
+        
+    <div class="row pt-5 ">
+        <div class="col-md-6 col-lg-6 col-12">
+            <div class="mt-5">
+
+                
+
+
+            <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/Invest-in-your-future-propert- in-dubai.webp" alt="" class="img-responsive" width="100%">
+
+            </div>
+            </div>
+        <div class="col-md-6 col-lg-6 col-12 text-center align-self-center pt-2">
+                <h2 class="text-white text-uppercase section-title-heading display-5" style="text-decoration-line: underline;">
+                Invest in Your Future</h2>
+                
+                <br>
+                <p class="text-white section-p">
+                Dubai's real estate market presents lucrative investment opportunities, and buying a commercial property here can yield significant returns. Our experts stay updated with market trends and can help you identify the best investment options based on your goals and budget. Explore our website to browse our extensive collection of commercial properties,<strong><a class="text-light" href="https://www.commercialpropertydxb.ae/factories"> factories</a></strong> and<strong><a class="text-light" href="https://www.commercialpropertydxb.ae/land-sales"> land</a></strong>. Contact us today, and let us guide you towards making the best real estate decisions in Dubai.
+                </p>
+                <div class="col-4 rounded bg-gradient">
+                <a href="tel:+971567239970">
+                    <span class="property_bottom_icon text-white"> 
+                        <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/icon/phone-call-white.png" alt="" width="14px" height="auto"> Contact Us</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="row pt-5">
+        
+        <div class="col-md-6 col-lg-6 col-12 text-center align-self-center my-3">
+                <h2 class="text-white text-uppercase section-title-heading display-5" style="text-decoration-line: underline;">
+                Find Your Ideal Property</h2>
+        
+                <br>
+                <p class="text-white section-p">
+                Whether you are searching for properties for rent or sale, we have an extensive portfolio to cater to your needs. We specialize in commercial property and can help you acquire assets that will deliver an excellent ROI over the long term. Whatever your requirements are, talk to the experts at CommercialPropertyDXB. We have property solutions for<strong><a class="text-light" href="https://www.commercialpropertydxb.ae/residential-building"> residential</a></strong> and<strong>
+                <a class="text-light" href="https://www.commercialpropertydxb.ae/commercial-building">commercial buildings</a></strong>, retail and office spaces, full floors, hotels, schools, clinics, hospitals, nurseries,
+                <strong>
+                    <a class="text-light" href="https://www.commercialpropertydxb.ae/labour-accommodation">labor accommodations</a></strong>, <strong><a class="text-light" href="https://www.commercialpropertydxb.ae/warehouses">warehouses</a></strong>, building plots, industrial facilities, and more. With CommercialPropertyDXB, you gain access to the most comprehensive collection of commercial real estate in Dubai.
+                </p>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12">
+                <div class="mb-5">
+                    <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/find your ideal property in dubai.webp" alt="" class="img-responsive" width="100%">
+            </div>
+               
+            </div>
+            
+        </div>
+    </div>
+
+
+    
+</section>
+</section>
+<!-- question -->
+<section class="py-5  news bg-transparent">
+  <div class="container bg-transparent">
+      <div class="row">
+          <div class="col-sm-12 text-center text-light">
+              <h2 class="display-5 section-title-heading  mb-4">&nbsp;Frequently Asked Questions About Buying Commercial Property In Dubai</h2>
+          </div>
+      </div>
+ <div class="row mt-5">
+     
+     
+     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="accordion" id="accordionExample1 bg-transparent ">
+    <div class="accordion-item bg-transparent text-light">
+      <h3 id="headingOne" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <div class="row">
+              <div class="col-1 "><span class="fw-bold fs-21"> Q.</span></div>
+              <div class="col-11">
+                  <p class="accordin-p">
+                      What can be expected as returns on investments for commercial properties in Dubai?
+                  </p>
+              </div>
+          </div>
+      </h3>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+          <div class="accordion-body bg-transparent">
+              Returns on investments for commercial properties in Dubai can differ significantly depending on factors like location, market conditions, property type, and rental demand. Average rental yields range between 6%-9.1%.
+          </div>
+      </div>
+  </div>
+  
+
+      <div class="accordion-item">
+          <h3 id="headingTwo" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <div class="row">
+                  <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+                  <div class="col-11">
+                      <p class="accordin-p">
+                          What factors should be taken into account when purchasing commercial property in Dubai?
+                      </p>
+                  </div>
+              </div>
+          </h3>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
+              <div class="accordion-body">
+                  Considerations include location, infrastructure, accessibility, market demand, rental yields, capital appreciation potential, zoning regulations, future development plans, and available amenities.
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item">
+          <h3 id="headingThree" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <div class="row">
+                  <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+                  <div class="col-11">
+                      <p class="accordin-p">
+                          Does Dubai impose any specific legal or regulatory requirements or restrictions when purchasing commercial real estate?
+                      </p>
+                  </div>
+              </div>
+          </h3>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample1">
+              <div class="accordion-body">
+                  Yes, foreign nationals can purchase commercial property within designated freehold zones. It's essential to understand Dubai Land Department (DLD) requirements and consult legal experts before purchasing.
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item">
+          <h3 id="headingFour" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <div class="row">
+                  <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+                  <div class="col-11">
+                      <p class="accordin-p">
+                          What types of commercial properties can I find for purchase in Dubai?
+                      </p>
+                  </div>
+              </div>
+          </h3>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample1">
+              <div class="accordion-body">
+                  Commercial properties include office spaces, retail shops, showrooms, warehouses, and commercial plots of land.
+              </div>
+          </div>
+      </div>
+      
+      <div class="accordion-item">
+          <h3 id="headingFive" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <div class="row">
+                  <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+                  <div class="col-11">
+                      <p class="accordin-p">
+                           How can commercial property prices in various areas of Dubai vary?
+                      </p>
+                  </div>
+              </div>
+          </h3>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                 Price variations in Dubai for commercial properties depend on their location, size, quality, and demand. Prime areas like Downtown Dubai and Business Bay tend to command higher property values compared to emerging areas located farther out.
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</div>
+
+<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+  <div class="accordion" id="accordionExample2">
+      <div class="accordion-item">
+  <h3 id="headingzero" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsezero" aria-expanded="false" aria-controls="collapsezero">
+      <div class="row">
+          <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+          <div class="col-11">
+              <p class="accordin-p">
+                 Where are the top areas in Dubai to buy commercial property?
+              </p>
+          </div>
+      </div>
+  </h3>
+  <div id="collapsezero" class="accordion-collapse collapse" aria-labelledby="headingzero" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         In terms of commercial real estate investment opportunities in Dubai, some of the key areas include Downtown Dubai, Business Bay, Dubai Marina, Jumeirah Lake Towers (JLT), Al Barsha, Deira, Sheikh Zayed Road, Dubai Silicon Oasis, Dubai Investment Park, and Dubai International City.
+      </div>
+  </div>
+</div> 
+
+
+      <div class="accordion-item">
+          <h3 id="headingSix" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <div class="row">
+                  <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+                  <div class="col-11">
+                      <p class="accordin-p">
+                          Does Dubai offer financing options for purchasing commercial property?
+                      </p>
+                  </div>
+              </div>
+          </h3>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                  Yes, banks provide commercial property loans in Dubai, subject to eligibility criteria.
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item">
+          <h3 id="headingSeven" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <div class="row">
+                  <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+                  <div class="col-11">
+                      <p class="accordin-p">
+                          Can you help international clients with property investments in Dubai?
+                      </p>
+                  </div>
+              </div>
+          </h3>
+          <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                  Yes, we assist international clients with investments, offering insights and guidance.
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item">
+          <h3 id="headingEight" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              <div class="row">
+                  <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+                  <div class="col-11">
+                      <p class="accordin-p">
+                          What amenities and facilities can I find in commercial areas in Dubai?
+                      </p>
+                  </div>
+              </div>
+          </h3>
+          <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                  Amenities include parking, transportation links, dining options, recreational areas, fitness centers, and business support services.
+              </div>
+          </div>
+      </div>
+      
+      <div class="accordion-item">
+      <h3 id="headingTen" class="accordion-header accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+          <div class="row">
+              <div class="col-1"><span class="fw-bold fs-21"> Q.</span></div>
+              <div class="col-11">
+                  <p class="accordin-p">
+                      How can I locate a reliable real estate agency or agent to assist me in purchasing commercial property in Dubai?
+                  </p>
+              </div>
+          </div>
+      </h3>
+      <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+              To locate a trustworthy real estate agency or agent in Dubai, it's advisable to conduct online research, seek recommendations from friends or colleagues, check professional directories, or contact established real estate companies operating in the city. Before engaging their services, it is wise to verify credentials, experience, and track record.
+          </div>
+      </div>
+  </div>
+  
+      
+      
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+  
+  
+  
+ </div>
+      
+
+  </div>
+</section>
+<!-- email -->
+<section class="py-2 faqs bg-secondary text-white">
+  <div class="container-fluid py-3 px-md-5">
+      <div class="row align-items-center text-center text-md-start">
+          
+          <!-- Logo Section -->
+          <div class="col-12 col-md-2 col-lg-1 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start">
+              <a href="https://www.commercialpropertydxb.ae">
+                  <img class="mb-2" src="https://www.commercialpropertydxb.ae/frontend/assets/images/logo.png" alt="logo" style="height: 75px; width: auto;">
+              </a>
+          </div>
+          
+          <!-- Newsletter Text Section -->
+          <div class="col-12 col-md-6 col-lg-6 mt-3 mt-md-0">
+              <p class="mb-0">Send me your newsletter with the latest insights into the commercial property market and offers, promotions, and updates from Commercial Property DXB.</p>
+          </div>
+          
+          <!-- Email Input Section -->
+          <div class="col-12 col-md-4 col-lg-5 mt-3 mt-md-0">
+              <div class="input-group">
+                  <span class="input-group-text bg-white text-secondary"><i class="x fa-solid fa-envelope"></i></span>
+                  <input type="email" class="form-control" placeholder="Enter your Email">
+                  <span class="input-group-text bg-white text-secondary"><i class="x fa-solid fa-circle-chevron-right"></i></span>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+<!-- footer -->
+<section class="bg-dark">
+  <div class="container-fluid pt-5">
+    <div class="row">
+      <!-- First Column (Left - Company Info) -->
+      <div class="col-12 col-md-2 mb-3">
+        <h2 class="footer_heading text-white">Commercial Property DXB</h2>
+        <span class="text-white">
+          Your trusted commercial real estate agent in Dubai UAE. We specialize in office spaces, retail spaces, and more. Let us assist you in finding your ideal property.
+        </span>
+      </div>
+
+      <!-- Second Column (Commercial Areas) -->
+      <div class="col-12 col-md-2 mb-3">
+        <h2 class="footer_heading2 text-white">Commercial Areas</h2>
+        <a class="footer_ul_links text-white" href="#">Jabel Ali</a><br>
+        <a class="footer_ul_links text-white" href="#">Business Bay</a><br>
+        <a class="footer_ul_links text-white" href="#">Palm Jumeirah</a><br>
+        <a class="footer_ul_links text-white" href="#">Internet/Media City</a><br>
+        <a class="footer_ul_links text-white" href="#">Sheikh Zayed Road</a><br>
+        <a class="footer_ul_links text-white" href="#">Dubai Investments Park</a><br>
+        <a class="footer_ul_links text-white" href="#">All Communities</a>
+      </div>
+
+      <!-- Third Column (Commercial Properties) -->
+      <div class="col-12 col-md-2 mb-3">
+        <h2 class="footer_heading2 text-white">Commercial Properties</h2>
+        <a class="footer_ul_links text-white" href="#">Warehouse for Sale in Dubai</a><br>
+        <a class="footer_ul_links text-white" href="#">Labour Accommodations in Dubai</a><br>
+        <a class="footer_ul_links text-white" href="#">Factories For Sale in Dubai</a><br>
+        <a class="footer_ul_links text-white" href="#">Commercial Building in Dubai</a><br>
+        <a class="footer_ul_links text-white" href="#">Commercial Land for Sale in Dubai</a>
+      </div>
+
+      <!-- Fourth Column (Curations) -->
+      <div class="col-12 col-md-2 mb-3">
+        <h2 class="footer_heading2 text-white">Curations</h2>
+        <a class="footer_ul_links text-white" href="#">Investment Guides</a><br>
+        <a class="footer_ul_links text-white" href="#">Terms &amp; Conditions</a><br>
+        <a class="footer_ul_links text-white" href="#">Privacy Policy</a><br>
+        <a class="footer_ul_links text-white" href="#">Careers</a><br>
+        <a class="footer_ul_links text-white" href="#">Blog / News</a><br>
+        <a class="footer_ul_links text-white" href="#">Meet our Team</a><br>
+        <a class="footer_ul_links text-white" href="#">Elite Property Brokerage, L.L.C.</a>
+      </div>
+
+      <!-- Fifth Column (Contact Info) -->
+      <div class="col-12 col-md-2 mb-3">
+        <h2 class="footer_heading2 text-white">Contact Us</h2>
+        <span class="text-white">613 Onyx Tower 1, SZR Dubai, UAE<br>PO Box 449183, Dubai, UAE</span><br>
+        <div class="mt-2">
+          <span class="footer_email_link text-white">P: <a class="text-white" href="tel:+971585998161">+971 58 599 8161</a><br>
+          E: <a class="text-white" href="mailto:info@elitepropertydxb.com">info@elitepropertydxb.com</a></span>
+        </div>
+        <div class="mt-2">
+          <a class="footer_ul_links text-white" href="#">About Us</a><br>
+          <a class="footer_ul_links text-white" href="#">Office Location</a><br>
+          <a class="footer_ul_links text-white" href="#">Contact us</a>
+        </div>
+      </div>
+
+      <!-- Footer Disclaimer -->
+      <div class="col-12 mt-3 text-center">
+        <span class="text-white" style="font-size:12px;">
+          Elite Commercial Property DXB is Registered Under Real Estate Regulation Authority of Dubai-UAE, RERA ORN #25831
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid xx"></section>
+<!-- footer_bottom -->
+<section class="bottom_footer bg-dark mt-5">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <ul class="d-flex footer-ul text-white">
+                <li><a class="footer_ul_links text-light text-decoration-none" href="#">Home</a></li>
+                <li><a class="footer_ul_links text-light text-decoration-none" href="#">List Your Properties</a></li>
+              </ul>
+              
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#" style="text-decoration: none;"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/icon/fb.png" alt="fb" width="30px"> </a>&nbsp;
+            <a href="#" style="text-decoration: none;"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/icon/insta.png" alt="insta" width="30px"> </a>&nbsp;
+            <a href="#" style="text-decoration: none;"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/icon/linkedin.png" alt="linkedin" width="30px"> </a>&nbsp;
+            <a href="#" style="text-decoration: none;"> <img src="https://www.commercialpropertydxb.ae/frontend/assets/images/icon/youtube.png" alt="youtube" width="30px"> </a>
+          </div>
+          
+          <div class="col-md-4 text-right copyright">
+              <p class="text-white">COPYRIGHT 2024 ALL RIGHT RESERVED</p><a href="#" rel="dofollow"></a>
+          </div>
+      </div>
+  </div>
+</section>
+
+   
+
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+  </div>
+
+ </section>
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./country.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
